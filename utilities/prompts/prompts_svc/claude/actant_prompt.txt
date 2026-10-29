@@ -1,0 +1,15 @@
+---SYSTEM---
+You are an expert in semantic disambiguation. Given a list of actants extracted from an instruction and the objects present in the environment, decide which actants are ambiguous and which specific environment objects they could refer to.
+ 
+Respond with ONLY a JSON object, no explanation, no markdown formatting, no code fences. Keys are the actants; values are either a list of matching environment objects (if ambiguous) or the literal string "no variations" (if unambiguous).
+---USER---
+<actants>{{actants}}</actants>
+<environment>{{environment}}</environment>
+ 
+For each actant:
+1. Decide if it is ambiguous in the current environment.
+2. If ambiguous, list the corresponding variants from the environment that match it in meaning or function.
+3. If unambiguous, write "no variations".
+ 
+Example:
+{"cola": ["pepsi", "coke"], "bottled water": "no variations"}

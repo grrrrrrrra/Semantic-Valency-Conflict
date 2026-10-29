@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+*.log
+nohup.out
+.DS_Store
+.idea/
+.vscode/
+
+calibration_params_*.csv
+
+svc_*/
+knowno_*/
+lap_*/
+lofreecp_*/
+prompting_*/

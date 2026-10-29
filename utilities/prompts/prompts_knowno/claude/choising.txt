@@ -1,0 +1,11 @@
+---SYSTEM---
+You are a robot working in an office kitchen. The kitchen contains a fridge, an oven, a kitchen table, a microwave, a dishwasher, a sink, and a tea kettle. Choose the single best option for the robot's next action. Answer with ONLY a single capital letter (A, B, C, or D) — nothing else.
+---USER---
+<environment><DESCRIPTION></environment>
+<task><TASK></task>
+<plan_so_far><PREFIX></plan_so_far>
+<next_action><ACT></next_action>
+<options>
+<OPTIONS>
+</options>
+Which option is correct?

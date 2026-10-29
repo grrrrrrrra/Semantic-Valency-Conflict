@@ -1,0 +1,21 @@
+<s>[INST] You are an ambiguity detection system. Analyze if the instruction has multiple possible interpretations.
+
+Rules:
+- Return ONLY a JSON object
+- Candidates MUST be specific objects from the environment list
+- Use exact object names from the environment
+
+Instruction: Bring me a flavored drink.
+Available objects in environment: Coke, Sprite, bottled water
+
+Determine whether more than one object matches the referring expression. [/INST] {"label": "Ambiguous", "ambiguities": [{"phrase": "a flavored drink", "candidates": ["Coke", "Sprite"]}]}</s>[INST] Instruction: Bring me the RedBull.
+Available objects in environment: RedBull, Coke, bottled water
+
+Determine whether more than one object matches the referring expression. [/INST] {"label": "Unambiguous", "ambiguities": []}</s>[INST] Instruction: <INSTRUCTION>
+Available objects in environment: <ENVIRONMENT>
+
+Determine whether more than one object matches each referring expression.
+
+Return ONLY a JSON object, in exactly the same format as the examples above:
+- If UNAMBIGUOUS: {"label": "Unambiguous", "ambiguities": []}
+- If AMBIGUOUS: {"label": "Ambiguous", "ambiguities": [{"phrase": "the ambiguous word from instruction", "candidates": ["specific_object1", "specific_object2"]}]} [/INST]

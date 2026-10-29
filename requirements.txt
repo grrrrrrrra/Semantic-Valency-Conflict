@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+transformers>=4.51
+accelerate
+sentence-transformers
+spacy
+nltk
+gensim
+openai
+pyyaml
+tqdm

@@ -1,0 +1,12 @@
+<s>[INST] You are a robot working in an office kitchen. The kitchen contains a fridge, an oven, a kitchen table, a microwave, a dishwasher, a sink, and a tea kettle.
+In addition, the kitchen has <DESCRIPTION>.
+
+Your task is: "<TASK>". You have created a plan to complete this task: <PREFIX>.
+
+What is your next action?
+<ACT>
+
+Options:
+<OPTIONS>
+
+Choose one option: A, B, C, or D. Answer with a single capital letter. [/INST]

@@ -1,0 +1,69 @@
+matching:
+  use_text_match: true
+  use_lemma_overlap: true
+  use_embedding: true
+  use_wordnet: true
+  use_manual: true
+  embedding_threshold_base: 0.7
+  embedding_threshold_length_factor: 0.05
+  embedding_threshold_floor: 0.55
+  synonym_threshold: 0.75
+  lemma_overlap_min_sim: 0.75
+
+weights:
+  text_match: 1.0
+  lemma_overlap: 0.8
+  embedding: 0.7
+  synonym_embedding: 0.6
+  manual: 0.9
+
+manual_synonyms:
+  cola: ["coke", "pepsi"]
+  soda: ["sprite", "coke", "pepsi", "orange soda"]
+  drink: ["sprite", "coke", "pepsi", "orange soda", "bottled unsweetened tea", "redbull"]
+  flavored drink: ["sprite", "orange soda", "bottled unsweetened tea"]
+  caffeinated drink: ["redbull"]
+  bottle drink: ["bottled unsweetened tea", "bottled water"]
+  beverage: ["sprite", "pepsi", "coke", "redbull", "bottled unsweetened tea",
+             "beer can", "red bull can", "pepsi can", "coca-cola can", "sprite bottle"]
+
+  knife: ["paring knife", "butter knife", "bread knife", "chef's knife",
+          "stainless steel dinner knife"]
+  sponge: ["clean sponge", "dirty sponge", "dirty sponge with food residue"]
+  bowl: ["ceramic bowl", "metal bowl", "plastic bowl", "stainless steel bowl",
+         "mixing bowl", "big bowl", "small bowl"]
+  plate: ["ceramic dinner plate", "ceramic bread plate", "ceramic salad plate",
+          "plastic dinner plate", "plastic bread plate", "plastic salad plate",
+          "glass dinner plate", "glass bread plate", "glass salad plate",
+          "stainless steel dinner plate"]
+  cup: ["paper cup", "plastic cup", "porcelain cup"]
+  mug: ["beer mug", "ceramic mug", "glass mug"]
+  fork: ["stainless steel dinner fork", "stainless steel salad fork"]
+  spoon: ["stainless steel tablespoon", "wooden tablespoon", "silver teaspoon"]
+  food storage container: ["glass food storage container", "plastic food storage container"]
+
+  milk: ["glass milk bottle", "oat milk bottle", "cow's milk bottle",
+         "cow's milk", "oat milk", "condensed milk", "bottled milk"]
+  chocolate: ["dark chocolate tablet", "milk chocolate tablet",
+              "almond milk chocolate tablet"]
+  cheese: ["cheddar cheese", "cheddar cheese slices", "cottage cheese",
+           "cream cheese", "fresh mozzarella package", "blue cheese", "parmesan"]
+  yogurt: ["greek yogurt", "greek yogurt cup", "vanilla yogurt cup",
+           "strawberry yogurt cup"]
+  bread: ["sliced whole wheat bread", "uncut white bread", "toasted bread",
+          "sliced brown bread", "sliced whole grain bread"]
+  chips: ["rice chips", "jalapeno chips", "multigrain chips", "potato chips",
+          "kettle chips"]
+  pie: ["apple pie", "cream pie", "pumpkin pie", "key lime pie", "shepherd's pie"]
+  onion: ["green onion", "sweet onion", "yellow onion"]
+  grapes: ["black seedless grapes", "green seedless grapes", "red seedless grapes"]
+  rice: ["basmati rice", "brown rice", "jasmine rice"]
+  tea: ["black tea bags", "green tea bags", "bottled unsweetened tea", "bottled iced tea"]
+  cake: ["carrot cake", "cheesecake", "chocolate cake", "ice cream cake",
+         "strawberry cake", "vanilla cake"]
+  pizza: ["frozen mushroom pizza", "frozen pepperoni pizza", "frozen sausage pizza",
+          "frozen vegetable pizza"]
+  oil: ["coconut oil", "olive oil", "sunflower oil", "oat oil"]
+  biscuits: ["digestive biscuits", "ginger biscuits"]
+  berries: ["blackberries", "blueberries", "raspberries", "strawberries"]
+  salt: ["table salt", "sea salt"]

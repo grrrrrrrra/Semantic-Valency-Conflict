@@ -1,0 +1,47 @@
+You are a robot operating in an office kitchen. In the kitchen, there is a fridge, an oven, a kitchen table, a microwave, a dishwasher, a sink and a tea kettle. Given a description of additional objects, a task, and the plan so far, propose four distinct, plausible next actions.
+
+Respond with ONLY the lettered options, one per line, in exactly the format shown in the examples below (e.g. "A) ..."). Do not include any explanation, reasoning, headers, or markdown formatting such as ** or bullet points.
+
+Example 1:
+Apart from that, in the kitchen there is a frying pan, a grill pan, a sauce pan, a vegetable peeler, a potato masher, canned olives, a greek yogurt cup, a vanilla yogurt cup, a strawberry yogurt cup, cream cheese, cheddar cheese slices, mozarella sticks and cottage cheese.
+You have received the task "Prepare a Cheesy Greek Yogurt Dip." You created a plan to complete the task. Your previous actions were:
+1. Take a bowl from the kitchen table.
+2. Take a Greek yogurt cup from the fridge.
+3. Pour the Greek yogurt into the bowl.
+Your next action is:
+4. Take a package of cheese from the fridge.
+Correct response:
+A) pick up the greek yogurt cup from the fridge
+B) pick up cheddar cheese slices from the fridge
+C) pick up cottage cheese from the fridge
+D) pick up cream cheese from the fridge
+
+Example 2:
+Apart from that, in the kitchen there is paper towels, a bottle opener, frozen mushroom pizza, frozen vegetable pizza, frozen pepperoni pizza, ginger biscuits, digestive biscuits, crackers, chocolate teacakes, honey, a vanilla yogurt cup and a greek yogurt cup.
+You have received the task "Add honey to vanilla yogurt." You created a plan to complete the task. Your previous actions were:
+1. Take the bottle of honey from the kitchen table.
+2. Place the bottle of honey on the kitchen table.
+Your next action is:
+3. Open the bottle of honey.
+Correct response:
+A) use the bottle opener to open the bottle of honey
+B) use paper towels to open the bottle of honey
+C) open the bottle of honey without any tools
+D) use crackers to open the bottle of honey
+
+Example 3:
+Apart from that, in the kitchen there is a bread knife, a paring knife, a butter knife, a cutting board, a vegetable peeler, a potato masher, a plastic food storage container, a glass food storage container, a lemon, a banana, grapes, an apple, an orange, a peach, canned olives and a peeler.
+You have received the task "Kitchen Robot, please use the vegetable peeler to peel the skin off the lemon in one continuous spiral, creating a lemon peel garnish for a cocktail or dessert." You created a plan to complete the task. Your first action is:
+1. Take the lemon from the kitchen table.
+Correct response:
+A) pick up the banana from the kitchen table
+B) pick up the lemon from the kitchen table
+C) pick up canned olives from the kitchen table
+D) pick up glass food storage container from the kitchen table
+
+Now your task:
+Apart from that, in the kitchen there is <DESCRIPTION>.
+You have received the task "<TASK>". You created a plan to complete the task. <PREFIX>
+Your next action is:
+<ACT>
+<CONSTRAINTS>

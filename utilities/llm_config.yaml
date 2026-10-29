@@ -1,0 +1,64 @@
+models:
+  # current-generation backbones
+  gpt-5.6:
+    model_name: "openai/gpt-5.6-sol"
+    generation_settings:
+      max_tokens: 300
+      temperature: 0.3
+      reasoning_effort: "none"
+
+  gpt-4o:
+    model_name: "openai/gpt-4o"
+    generation_settings:
+      max_tokens: 300
+      temperature: 0.3
+
+  mistral-7b:
+    model_name: "mistralai/Mistral-7B-Instruct-v0.2"
+    generation_settings:
+      max_new_tokens: 300
+      do_sample: true
+      top_p: 0.95
+
+  mistral-small-24b:
+    model_name: "mistralai/Mistral-Small-24B-Instruct-2501"
+    generation_settings:
+      max_new_tokens: 300
+      do_sample: true
+      top_p: 0.95
+
+  claude-opus:
+    model_name: "anthropic/claude-opus-5"
+    generation_settings:
+      max_tokens: 300
+      temperature: 0.0
+
+  qwen3-8b:
+    model_name: "Qwen/Qwen3-8B"
+    generation_settings:
+      max_new_tokens: 300
+      do_sample: true
+      top_p: 0.95
+      pad_token_id: 151643
+
+  qwen3-32b:
+    model_name: "Qwen/Qwen3-32B"
+    generation_settings:
+      max_new_tokens: 300
+      do_sample: true
+      top_p: 0.95
+      pad_token_id: 151643
+
+  # earlier-generation backbones
+  gpt-3.5-turbo:
+    model_name: "openai/gpt-3.5-turbo"
+    generation_settings:
+      max_tokens: 300
+      temperature: 0.0
+
+  gemma-2-9b:
+    model_name: "google/gemma-2-9b-it"
+    generation_settings:
+      max_new_tokens: 300
+      do_sample: true
+      top_p: 0.95
